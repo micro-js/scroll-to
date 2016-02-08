@@ -24,6 +24,14 @@ var scrollTo = require('@f/scroll-to')
 scrollTo(100, 500, easeOutQuint)
 ```
 
+## Example
+
+To run the example showed in the gif above, run:
+
+```
+$ npm run example
+```
+
 ## API
 
 ### scrollTo(y, duration, easing, offset)
