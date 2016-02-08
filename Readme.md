@@ -29,7 +29,7 @@ scrollTo(100, 500, easeOutQuint)
 To run the example showed in the gif above, run:
 
 ```
-$ npm run example
+$ npm i && npm run example
 ```
 
 ## API
