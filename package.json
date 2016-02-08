@@ -8,18 +8,21 @@
   "scripts": {
     "postversion": "git push && git push --tags && npm publish --access=public",
     "example": "budo ./example/index.js --live --open --dir ./example",
-    "test": "hihat test/index.js --no-devtool --print --frame 0,0,0,500 | tap-spec"
+    "test": "hihat test/index.js --no-devtool --print --frame 0,0,0,500 | tap-spec",
+    "test:headless": "browserify test/index.js | tape-run"
   },
   "dependencies": {
     "@f/animate": "^1.0.1"
   },
   "devDependencies": {
     "@f/to-array": "^1.1.1",
+    "browserify": "^13.0.0",
     "budo": "^8.0.4",
     "eases": "^1.0.8",
     "hihat": "^2.6.4",
     "tap-dev-tool": "^1.3.0",
     "tap-spec": "^4.1.1",
-    "tape": "^4.2.2"
+    "tape": "^4.2.2",
+    "tape-run": "^2.1.3"
   }
 }
