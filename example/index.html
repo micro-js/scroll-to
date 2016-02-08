@@ -1,0 +1,58 @@
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+  }
+
+  .block {
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .button {
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    border: none;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 2px;
+  }
+
+  .bg1 { background-color: #455A64; color: #fff }
+  .bg2 { background-color: #607D8B; color: #fff }
+  .bg3 { background-color: #CDDC39; }
+</style>
+
+<div id='js-block-1' class='block bg1'>
+  <h2>Container 1</h2>
+  <button class='button' data-next='2'>Scroll to next</button>
+</div>
+
+<div id='js-block-2' class='block bg2'>
+  <h2>Container 2</h2>
+  <button class='button' data-next='3'>Scroll to next</button>
+</div>
+
+<div id='js-block-3' class='block bg3'>
+  <h2>Container 3</h2>
+  <button class='button' data-next='1'>Scroll to next</button>
+</div>
+
+
+<script src='index.js'></script>

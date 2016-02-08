@@ -1,0 +1,21 @@
+{
+  "name": "@f/scroll-to",
+  "description": "Imperatively smooth scroll to the given y-coordinates",
+  "repository": "git://github.com/micro-js/scroll-to.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public",
+    "example": "budo ./example/index.js --live --open --dir ./example"
+  },
+  "dependencies": {
+    "@f/animate": "^1.0.1"
+  },
+  "devDependencies": {
+    "@f/to-array": "^1.1.1",
+    "budo": "^8.0.4",
+    "eases": "^1.0.8",
+    "tape": "^4.2.2"
+  }
+}
