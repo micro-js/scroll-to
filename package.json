@@ -2,7 +2,7 @@
   "name": "@f/scroll-to",
   "description": "Imperatively smooth scroll to the given y-coordinates",
   "repository": "git://github.com/micro-js/scroll-to.git",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
