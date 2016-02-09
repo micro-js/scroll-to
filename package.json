@@ -12,6 +12,7 @@
     "test:headless": "browserify test/index.js | tape-run"
   },
   "dependencies": {
+    "@f/almost-equal": "^0.1.0",
     "@f/animate": "^1.0.1"
   },
   "devDependencies": {
