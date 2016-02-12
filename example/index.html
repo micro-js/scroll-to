@@ -20,38 +20,67 @@
   }
 
   .block {
-    height: 100vh;
+    height: 400px;
     width: 100%;
     padding: 50px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .button-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 10px
   }
 
   .button {
     margin-top: 10px;
     font-family: 'Montserrat';
     border: none;
-    background-color: #fff;
+    background-color: #eee;
     padding: 15px 20px;
     border-radius: 2px;
   }
 
-  .bg1 { background-color: #455A64; color: #fff }
+  .color1 { border-bottom: 3px solid #455A64 }
+  .color2 { border-bottom: 3px solid #607D8B }
+  .color3 { border-bottom: 3px solid #CDDC39 }
+
+
+  /*.bg1 { background-color: #455A64; color: #fff }
   .bg2 { background-color: #607D8B; color: #fff }
-  .bg3 { background-color: #CDDC39; }
+  .bg3 { background-color: #CDDC39; }*/
 </style>
 
-<div id='js-block-1' class='block bg1'>
-  <h2>Container 1</h2>
-  <button class='button' data-next='2'>Scroll to next</button>
+<div class='button-container'>
+  <button id='js-btn-scroll-up' class='button'>Scroll up -400px</button>
+  <button id='js-btn-scroll-down' class='button'>Scroll down +400px</button>
 </div>
 
-<div id='js-block-2' class='block bg2'>
-  <h2>Container 2</h2>
-  <button class='button' data-next='3'>Scroll to next</button>
+<div class='block color1'>
+  <h2>400px</h2>
 </div>
 
-<div id='js-block-3' class='block bg3'>
-  <h2>Container 3</h2>
-  <button class='button' data-next='1'>Scroll to next</button>
+<div class='block color2'>
+  <h2>800px</h2>
+</div>
+
+<div class='block color3'>
+  <h2>1200px</h2>
+</div>
+
+<div class='block color1'>
+  <h2>1600px</h2>
+</div>
+
+<div class='block color2'>
+  <h2>2000px</h2>
+</div>
+
+<div class='block color3'>
+  <h2>2400px</h2>
 </div>
 
 
